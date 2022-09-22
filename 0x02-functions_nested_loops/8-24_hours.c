@@ -5,19 +5,22 @@
  * jack_bauer - print every minute of jack bauer.
  *
  */
+
 void jack_bauer(void)
 {
-	int hour;
-	int minute;
+	int hr;
+	int min;
 
-	for (hour = 0; hour <= 23; hour++)
-	for (minute = 0; minute <= 59; minute++)
+	for (hr = 0; hr < 24; hr++)
 	{
-		_putchar('0' + hour / 10);
-		_putchar('0' + hour % 10);
-		_putchar(':');
-		_putchar('0' + minute / 10);
-		_putchar('0' + minute % 10);
-		_putchar('\n');
+		for (min = 0; min < 60; min++)
+		{
+			_putchar((hr / 10) + '0');
+			_putchar((hr % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar('\n');
+		}
 	}
 }
