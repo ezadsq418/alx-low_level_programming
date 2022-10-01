@@ -1,0 +1,1 @@
+static library readmi file
