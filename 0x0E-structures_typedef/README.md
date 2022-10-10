@@ -1,0 +1,1 @@
+strutire and typedef
